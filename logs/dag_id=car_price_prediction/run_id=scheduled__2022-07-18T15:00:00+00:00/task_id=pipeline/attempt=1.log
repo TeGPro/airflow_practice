@@ -1,0 +1,33 @@
+[2025-03-22T12:27:13.866+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-22T12:27:14.182+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: car_price_prediction.pipeline scheduled__2022-07-18T15:00:00+00:00 [queued]>
+[2025-03-22T12:27:20.147+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: car_price_prediction.pipeline scheduled__2022-07-18T15:00:00+00:00 [queued]>
+[2025-03-22T12:27:20.161+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-22T12:27:20.626+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): pipeline> on 2022-07-18 15:00:00+00:00
+[2025-03-22T12:27:20.823+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'car_price_prediction', 'pipeline', 'scheduled__2022-07-18T15:00:00+00:00', '--job-id', '85', '--raw', '--subdir', 'DAGS_FOLDER/hw_dag.py', '--cfg-path', '/tmp/tmpu86_rij1']
+[2025-03-22T12:27:20.830+0000] {standard_task_runner.py:105} INFO - Job 85: Subtask pipeline
+[2025-03-22T12:27:20.873+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=840) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-03-22T12:27:20.878+0000] {standard_task_runner.py:72} INFO - Started process 873 to run task
+[2025-03-22T12:27:21.104+0000] {task_command.py:467} INFO - Running <TaskInstance: car_price_prediction.pipeline scheduled__2022-07-18T15:00:00+00:00 [running]> on host 16707b17f984
+[2025-03-22T12:27:21.477+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='car_price_prediction' AIRFLOW_CTX_TASK_ID='pipeline' AIRFLOW_CTX_EXECUTION_DATE='2022-07-18T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-07-18T15:00:00+00:00'
+[2025-03-22T12:27:21.499+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-22T12:27:21.503+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-22T12:27:21.516+0000] {logging_mixin.py:190} INFO - Current task name:pipeline state:running start_date:2025-03-22 12:27:15.430770+00:00
+[2025-03-22T12:27:21.521+0000] {logging_mixin.py:190} INFO - Dag name:car_price_prediction and current dag run status:running
+[2025-03-22T12:27:21.526+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-22T12:27:26.335+0000] {job.py:229} INFO - Heartbeat recovered after 13.22 seconds
+[2025-03-22T12:27:29.003+0000] {pipeline.py:116} INFO - model: LogisticRegression, acc_mean: 0.7591, acc_std: 0.0075
+[2025-03-22T12:29:19.192+0000] {pipeline.py:116} INFO - model: RandomForestClassifier, acc_mean: 0.7769, acc_std: 0.0025
+[2025-03-22T12:30:07.210+0000] {pipeline.py:116} INFO - model: SVC, acc_mean: 0.7871, acc_std: 0.0042
+[2025-03-22T12:30:07.265+0000] {pipeline.py:121} INFO - best model: SVC, accuracy: 0.7871
+[2025-03-22T12:30:20.601+0000] {pipeline.py:129} INFO - Model is saved as /opt/***/data/models/cars_pipe_202503221230.pkl
+[2025-03-22T12:30:20.818+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-22T12:30:20.978+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-22T12:30:20.988+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=car_price_prediction, task_id=pipeline, run_id=scheduled__2022-07-18T15:00:00+00:00, execution_date=20220718T150000, start_date=20250322T122715, end_date=20250322T123020
+[2025-03-22T12:30:22.004+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-22T12:30:22.008+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-22T12:30:22.010+0000] {logging_mixin.py:190} INFO - Dag name:car_price_prediction queued_at:2025-03-22 12:26:31.564745+00:00
+[2025-03-22T12:30:22.011+0000] {logging_mixin.py:190} INFO - Task hostname:16707b17f984 operator:PythonOperator
+[2025-03-22T12:30:22.099+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-22T12:30:22.315+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

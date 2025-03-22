@@ -1,0 +1,30 @@
+[2025-03-22T12:20:47.320+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-22T12:20:47.371+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: car_price_prediction.predict scheduled__2022-06-21T15:00:00+00:00 [queued]>
+[2025-03-22T12:20:47.394+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: car_price_prediction.predict scheduled__2022-06-21T15:00:00+00:00 [queued]>
+[2025-03-22T12:20:47.395+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-22T12:20:47.471+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): predict> on 2022-06-21 15:00:00+00:00
+[2025-03-22T12:20:47.487+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=377) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-03-22T12:20:47.489+0000] {standard_task_runner.py:72} INFO - Started process 403 to run task
+[2025-03-22T12:20:47.491+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'car_price_prediction', 'predict', 'scheduled__2022-06-21T15:00:00+00:00', '--job-id', '43', '--raw', '--subdir', 'DAGS_FOLDER/hw_dag.py', '--cfg-path', '/tmp/tmpl06gknhn']
+[2025-03-22T12:20:47.493+0000] {standard_task_runner.py:105} INFO - Job 43: Subtask predict
+[2025-03-22T12:20:47.573+0000] {task_command.py:467} INFO - Running <TaskInstance: car_price_prediction.predict scheduled__2022-06-21T15:00:00+00:00 [running]> on host 16707b17f984
+[2025-03-22T12:20:47.704+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='car_price_prediction' AIRFLOW_CTX_TASK_ID='predict' AIRFLOW_CTX_EXECUTION_DATE='2022-06-21T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-06-21T15:00:00+00:00'
+[2025-03-22T12:20:47.707+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-22T12:20:47.708+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-22T12:20:47.708+0000] {logging_mixin.py:190} INFO - Current task name:predict state:running start_date:2025-03-22 12:20:47.372806+00:00
+[2025-03-22T12:20:47.709+0000] {logging_mixin.py:190} INFO - Dag name:car_price_prediction and current dag run status:running
+[2025-03-22T12:20:47.709+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-22T12:20:47.713+0000] {logging_mixin.py:190} INFO - Loading model: /opt/***/data/models/cars_pipe_202503221220.pkl
+[2025-03-22T12:20:47.775+0000] {logging_mixin.py:190} INFO - Predictions saved to /opt/***/data/predictions/predictions.csv
+[2025-03-22T12:20:47.776+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-22T12:20:47.789+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-22T12:20:47.790+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=car_price_prediction, task_id=predict, run_id=scheduled__2022-06-21T15:00:00+00:00, execution_date=20220621T150000, start_date=20250322T122047, end_date=20250322T122047
+[2025-03-22T12:20:47.823+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-22T12:20:47.823+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-22T12:20:47.827+0000] {logging_mixin.py:190} INFO - Dag name:car_price_prediction queued_at:2025-03-22 12:16:48.556568+00:00
+[2025-03-22T12:20:47.828+0000] {logging_mixin.py:190} INFO - Task hostname:16707b17f984 operator:PythonOperator
+[2025-03-22T12:20:47.878+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-22T12:20:47.911+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-22T12:20:47.913+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

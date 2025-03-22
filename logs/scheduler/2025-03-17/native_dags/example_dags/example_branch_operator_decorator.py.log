@@ -1,0 +1,29 @@
+[2025-03-17T17:16:34.804+0000] {processor.py:186} INFO - Started process (PID=66) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2025-03-17T17:16:34.805+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2025-03-17T17:16:34.806+0000] {logging_mixin.py:190} INFO - [2025-03-17T17:16:34.806+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2025-03-17T17:16:34.824+0000] {processor.py:925} INFO - DAG(s) 'example_branch_python_operator_decorator' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2025-03-17T17:16:34.903+0000] {logging_mixin.py:190} INFO - [2025-03-17T17:16:34.903+0000] {override.py:1912} INFO - Created Permission View: can edit on DAG:example_branch_python_operator_decorator
+[2025-03-17T17:16:34.910+0000] {logging_mixin.py:190} INFO - [2025-03-17T17:16:34.910+0000] {override.py:1912} INFO - Created Permission View: can read on DAG:example_branch_python_operator_decorator
+[2025-03-17T17:16:34.914+0000] {logging_mixin.py:190} INFO - [2025-03-17T17:16:34.913+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG:example_branch_python_operator_decorator
+[2025-03-17T17:16:34.918+0000] {logging_mixin.py:190} INFO - [2025-03-17T17:16:34.918+0000] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:example_branch_python_operator_decorator
+[2025-03-17T17:16:34.922+0000] {logging_mixin.py:190} INFO - [2025-03-17T17:16:34.922+0000] {override.py:1912} INFO - Created Permission View: can read on DAG Run:example_branch_python_operator_decorator
+[2025-03-17T17:16:34.926+0000] {logging_mixin.py:190} INFO - [2025-03-17T17:16:34.926+0000] {override.py:1912} INFO - Created Permission View: can create on DAG Run:example_branch_python_operator_decorator
+[2025-03-17T17:16:34.930+0000] {logging_mixin.py:190} INFO - [2025-03-17T17:16:34.930+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:example_branch_python_operator_decorator
+[2025-03-17T17:16:34.931+0000] {logging_mixin.py:190} INFO - [2025-03-17T17:16:34.931+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T17:16:34.940+0000] {logging_mixin.py:190} INFO - [2025-03-17T17:16:34.939+0000] {dag.py:3262} INFO - Creating ORM DAG for example_branch_python_operator_decorator
+[2025-03-17T17:16:34.947+0000] {logging_mixin.py:190} INFO - [2025-03-17T17:16:34.947+0000] {dag.py:4180} INFO - Setting next_dagrun for example_branch_python_operator_decorator to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T17:16:34.959+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.158 seconds
+[2025-03-17T17:17:05.569+0000] {processor.py:186} INFO - Started process (PID=129) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2025-03-17T17:17:05.570+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2025-03-17T17:17:05.571+0000] {logging_mixin.py:190} INFO - [2025-03-17T17:17:05.571+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2025-03-17T17:17:05.584+0000] {processor.py:925} INFO - DAG(s) 'example_branch_python_operator_decorator' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2025-03-17T17:17:05.603+0000] {logging_mixin.py:190} INFO - [2025-03-17T17:17:05.603+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T17:17:05.617+0000] {logging_mixin.py:190} INFO - [2025-03-17T17:17:05.617+0000] {dag.py:4180} INFO - Setting next_dagrun for example_branch_python_operator_decorator to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T17:17:05.629+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.064 seconds
+[2025-03-17T17:17:35.870+0000] {processor.py:186} INFO - Started process (PID=192) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2025-03-17T17:17:35.870+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2025-03-17T17:17:35.872+0000] {logging_mixin.py:190} INFO - [2025-03-17T17:17:35.872+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2025-03-17T17:17:35.885+0000] {processor.py:925} INFO - DAG(s) 'example_branch_python_operator_decorator' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2025-03-17T17:17:35.906+0000] {logging_mixin.py:190} INFO - [2025-03-17T17:17:35.906+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T17:17:35.926+0000] {logging_mixin.py:190} INFO - [2025-03-17T17:17:35.926+0000] {dag.py:4180} INFO - Setting next_dagrun for example_branch_python_operator_decorator to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T17:17:35.940+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.074 seconds
